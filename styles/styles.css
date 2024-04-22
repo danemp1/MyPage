@@ -1,0 +1,64 @@
+
+
+body { 
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
+    color: rgb(97, 97, 97);
+    background-color: #f9f7eb99;
+}
+.section { margin-bottom: 20px; }
+
+h1 { color: #333; } 
+h2 { color: #434343; }
+h3 { color: #000; }
+h4 { color: #000; }
+h5 { color: #3f3737; }
+
+a { color: #004e9c; text-decoration: none;}
+
+a:hover { text-decoration: underline; /* font-weight: bold; */ }
+
+a:visited { color: #6e4a7f; }
+
+p { color: #000000}
+
+
+
+.contact-info { font-style: italic; }
+
+.experience-title, .education-title, .volunteer-title, .skills-interests { font-weight: bolder; font-style: italic;  color: #000000; }
+
+.underline { text-decoration: underline; }
+
+.homebg { 
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.gigantic { 
+    padding-top: 2;
+    position: absolute;
+    font-size: 75px; 
+    margin-top: 2;
+}  
+
+.box1 {
+border-width: 1px;
+border-style: solid;
+}
+
+.box2 {
+    padding: 5px;
+}
+
+.box3 {
+    margin: 50px;
+}
+/* we made this boxes to demonstrate how these classes differ and how margin, padding, and border-settings impact our text */

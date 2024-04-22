@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #40e0d0, #96e0e8); /* Turquoise gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #055052; /* Darker shade for contrast */
+}
+
+#startButton {
+    background-color: #dbf9f8; /* Lighter, complementary turquoise shade */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #022021;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#scoreBoard {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #022021;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#timer {
+    background-color: #dbf9f8; /* Lighter, complementary turquoise shade */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #022021;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#startButton:hover {
+    background-color: #56c8d8;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: #66d3da; /* Slightly different turquoise shade for holes */
+    border-radius: 50%; /* Circular holes */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mole {
+    width: 80%; /* Slightly smaller to ensure it fits nicely inside the hole */
+    transition: transform 0.3s; /* Smooth transition for the popping effect */
+}
+
+.mole-up {
+    transform: translateY(0);
+}
+
+.mole-down {
+    transform: translateY(100%);
+}
